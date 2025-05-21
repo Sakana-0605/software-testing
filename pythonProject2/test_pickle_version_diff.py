@@ -24,20 +24,18 @@ def test_pickle_stability(name, obj, protocol=None):
     try:
         # 第一次序列化
         pickled1 = pickle.dumps(obj, protocol=protocol if protocol is not None else pickle.HIGHEST_PROTOCOL)
+        pickled2 = pickle.dumps(obj, protocol=protocol if protocol is not None else pickle.HIGHEST_PROTOCOL)
         hash1 = sha256_digest(pickled1)
         print(f"SHA-256 Hash #1: {hash1}")
-        
-        # 反序列化
-        unpickled = pickle.loads(pickled1)
-        
-        # 第二次序列化
-        pickled2 = pickle.dumps(unpickled, protocol=protocol if protocol is not None else pickle.HIGHEST_PROTOCOL)
         hash2 = sha256_digest(pickled2)
         print(f"SHA-256 Hash #2: {hash2}")
-        
+
         # 判断是否稳定（哈希是否相同）
         hash_equal = (hash1 == hash2)
         print(f"Stable Serialization (Hash Match): {hash_equal}")
+        
+        # 反序列化
+        unpickled = pickle.loads(pickled1)
 
         # 其他对比
         print(f"Unpickled == Original: {unpickled == obj}")
@@ -62,3 +60,4 @@ def run_tests():
 
 if __name__ == "__main__":
     run_tests()
+
