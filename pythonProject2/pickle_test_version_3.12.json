@@ -1,0 +1,57 @@
+[
+    {
+        "test_case": "simple_dict",
+        "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "input_repr": "{'a': 1, 'b': 2}",
+        "exception": null,
+        "sha256_hash_1": "8459b734e803eeb034cd3205f8126572c9a17f973421d321a3de7c0f654bf7f6",
+        "sha256_hash_2": "8459b734e803eeb034cd3205f8126572c9a17f973421d321a3de7c0f654bf7f6",
+        "stable_serialization": true,
+        "unpickled_equals_original": true,
+        "unpickled_is_original": false
+    },
+    {
+        "test_case": "float_nan",
+        "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "input_repr": "{'x': nan}",
+        "exception": null,
+        "sha256_hash_1": "16fc0a0f50b68b433c56a077608a2d524b0541f8c984551ce32f17b7106ebe1a",
+        "sha256_hash_2": "16fc0a0f50b68b433c56a077608a2d524b0541f8c984551ce32f17b7106ebe1a",
+        "stable_serialization": true,
+        "unpickled_equals_original": false,
+        "unpickled_is_original": false
+    },
+    {
+        "test_case": "custom_class",
+        "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "input_repr": "<__main__.MyClass object at 0x0000024F776B8920>",
+        "exception": null,
+        "sha256_hash_1": "9e3e127f748bdc2dcdb8229b2e3f6511bcc4aa98d974bd6802b6ceb8133cd7f0",
+        "sha256_hash_2": "9e3e127f748bdc2dcdb8229b2e3f6511bcc4aa98d974bd6802b6ceb8133cd7f0",
+        "stable_serialization": true,
+        "unpickled_equals_original": true,
+        "unpickled_is_original": false
+    },
+    {
+        "test_case": "nested_list",
+        "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "input_repr": "[[0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4]]",
+        "exception": null,
+        "sha256_hash_1": "c1704a9407e4a44560b99f6de39b93ca4aa71b2815287edbc70ae6cd6ff577ea",
+        "sha256_hash_2": "c1704a9407e4a44560b99f6de39b93ca4aa71b2815287edbc70ae6cd6ff577ea",
+        "stable_serialization": true,
+        "unpickled_equals_original": true,
+        "unpickled_is_original": false
+    },
+    {
+        "test_case": "module_func",
+        "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "input_repr": "<function add_one at 0x0000024F776A8EA0>",
+        "exception": null,
+        "sha256_hash_1": "08219adc73b6110e7efd4919b4bef3d2efb38d815109ed50707dc6ec7403df07",
+        "sha256_hash_2": "08219adc73b6110e7efd4919b4bef3d2efb38d815109ed50707dc6ec7403df07",
+        "stable_serialization": true,
+        "unpickled_equals_original": true,
+        "unpickled_is_original": true
+    }
+]
