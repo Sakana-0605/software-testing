@@ -1,0 +1,75 @@
+{
+  "system_info": {
+    "os": "Windows",
+    "os_version": "10.0.26100",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "python_version": "3.12.10",
+    "implementation": "CPython",
+    "timestamp": "2025-05-21T15:03:00.956779"
+  },
+  "protocol": 5,
+  "pickle_consistency_test": {
+    "test_object": "{'float': 3.141592653589793, 'nested': [None, True, -0.0, inf], 'flag': '🚀'}",
+    "result": {
+      "initial_hash": "20121821a56c83b552286f1c14834d8247be937d92f2ee4e71685b0665a29bdf",
+      "consistent_across_runs": true,
+      "consistent_with_repickle": true
+    }
+  },
+  "path_pickle_stability_test": {
+    "windows_style_path": {
+      "path_str": "C:\\Users\\User\\file.txt",
+      "pickle_hash": "4bb4833d06e3dc463c7e1b17973d1cdad3f8ae209539d08046e4ffe3e03abb7b",
+      "pickle_bytes_sample": "80059540000000000000008c07706174686c6962948c0b57696e646f7773..."
+    },
+    "unix_style_path": {
+      "path_str": "\\home\\user\\file.txt",
+      "pickle_hash": "49d0595daea142d4694ec1458a2f0c06d265b6bf44c0eb278b8c004c0112599f",
+      "pickle_bytes_sample": "8005953d000000000000008c07706174686c6962948c0b57696e646f7773..."
+    },
+    "relative_path": {
+      "path_str": "some\\relative\\path",
+      "pickle_hash": "1bb3909708683dca21812744af3383659c5af20cf34ba7f6b73ecdbaee5c7f2c",
+      "pickle_bytes_sample": "80059538000000000000008c07706174686c6962948c0b57696e646f7773..."
+    },
+    "current_dir": {
+      "path_str": ".",
+      "pickle_hash": "d710d218a0bdc6b13a390d8d95e57934549b251d5f1311e63b096c6116b45d48",
+      "pickle_bytes_sample": "8005951e000000000000008c07706174686c6962948c0b57696e646f7773..."
+    }
+  },
+  "set_pickle_variation_test": {
+    "set_ints": {
+      "hashes": [
+        "51f9959128e8f79fe575ccc51cb70fcc49575a4aff6310b615a9e02910e450ab",
+        "51f9959128e8f79fe575ccc51cb70fcc49575a4aff6310b615a9e02910e450ab"
+      ],
+      "consistent_across_runs": true,
+      "pickle_bytes_sample": "8005950f000000000000008f94284b014b024b034b044b05902e..."
+    },
+    "set_strs": {
+      "hashes": [
+        "a39965a18a5d584baa4d901cf9545031199b11e027c7d3b286a8434994413612",
+        "a39965a18a5d584baa4d901cf9545031199b11e027c7d3b286a8434994413612"
+      ],
+      "consistent_across_runs": true,
+      "pickle_bytes_sample": "8005951f000000000000008f94288c056170706c65948c06636865727279..."
+    },
+    "set_mixed": {
+      "hashes": [
+        "55cf1cfb10579ef9cfbce27dc54dde782f802222e5791d2cdc0bcb74e04ab8d0",
+        "55cf1cfb10579ef9cfbce27dc54dde782f802222e5791d2cdc0bcb74e04ab8d0"
+      ],
+      "consistent_across_runs": true,
+      "pickle_bytes_sample": "8005951c000000000000008f94288c0374776f944b014b044b0586944740..."
+    },
+    "set_empty": {
+      "hashes": [
+        "56d08dc47ca0820b594ef3bcf3a7a79b167e7747889c5363935d52d80b9c53f1",
+        "56d08dc47ca0820b594ef3bcf3a7a79b167e7747889c5363935d52d80b9c53f1"
+      ],
+      "consistent_across_runs": true,
+      "pickle_bytes_sample": "80058f942e..."
+    }
+  }
+}
